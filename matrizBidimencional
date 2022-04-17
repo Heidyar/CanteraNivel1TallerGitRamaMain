@@ -1,0 +1,28 @@
+Proceso NAleatorios1_100
+	
+	Definir x, pares, impares, vector,num,arreglo Como Entero;
+	Dimension vector[20]; 
+	
+	
+	Para x <- 1 Hasta 19 Con Paso 1 Hacer
+		Escribir " Rellenar con Numeros Aleatorio ";
+		Leer vector(x);
+		
+	FinPara
+	
+	pares <- 0;
+	impares <- 0;
+	Para x <- 1 Hasta 19 Con Paso 1 Hacer
+		Si vector(x) mod 2= 0 Entonces
+			pares <- pares + 1;
+		SiNo
+			impares <- impares + 1;
+		FinSi
+	FinPara
+		
+	
+	Escribir " La cantidad de pares son: ", pares;
+	Escribir " La cantidad de impares son: ", impares; 
+	
+	
+FinProceso
